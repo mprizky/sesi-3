@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meratakan Titik Dua</title>
+<style>
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+
+  .item {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .item span {
+    margin: 0 5px;
+  }
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="item">
+    <span>Availability</span>
+    <span>:</span>
+    <span>Full time</span>
+  </div>
+  <div class="item">
+    <span>Usia</span>
+    <span>:</span>
+    <span>19</span>
+  </div>
+  <div class="item">
+    <span>Lokasi</span>
+    <span>:</span>
+    <span>Jakarta</span>
+  </div>
+</div>
+
+</body>
+</html>

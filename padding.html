@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>padding</title>
+
+    <style>
+        /* 
+            konsep value css: 
+            1. property: value; 
+                value berlaku untuk semua arah ==> value = atas = kanan = bawah = kiri
+
+            2. property: value1 value2;
+                ==> value1 = atas dan bawah
+                    value2 = kanan dan kiri
+
+            3. property: value1 value2 value3 value4;
+                ==> value1 = atas
+                    value2 = kanan
+                    value3 = bawah
+                    value4 = kiri
+
+            4. property-arah: value;
+                misal: 
+                    margin-top: value1
+                    margin-right: value2
+                    padding-left: value3
+            
+        */
+
+        body {
+            margin: 0;
+        }
+
+        #kotak_1 {
+            background: red;
+            width: 200px;
+            height: auto;
+            margin: 20px;
+            border: 50px green solid;
+            padding: 35px; /* atas = kanan = bawah = kiri */
+            font-family: sans-serif;
+            font-size: 18px;
+            font-style: italic;
+
+        }
+
+        #kotak_2 {
+            background-color: green;
+            width: 100px;
+            height: auto;
+            margin: 10px 100px;
+            padding: 10px 50px;
+            color: rgb(235, 199, 199);
+            font-weight: bold;
+            text-decoration: underline;
+            
+        }
+
+        #kotak_3 {
+            background-color: blue;
+            width: 200px;
+            height: auto;
+            margin: 50px;
+            padding: 20px 30px 50px 70px;
+            text-decoration: line-through;
+            color: beige;
+        }
+
+        #kotak_4 {
+            background-color: yellowgreen;
+            width: 200px;
+            height: auto;
+            margin: 20px;;
+            padding: 60px 70px 20px 10px;
+            font-style: oblique;
+        }
+
+        #kotak_5 {
+            background: blue;
+            color: wheat;
+            width: 400px;
+            height: 200px;
+            margin: 25px;
+            padding: 50px;
+            max-height: 200px;
+            overflow: auto;
+            
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+        }
+
+        
+    </style>
+
+</head>
+<body>
+    <h1>Margin</h1>
+
+    <div class="flex" id="kotak_1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, alias quos maiores repellat, quidem est culpa optio sapiente at, qui rem. At rem eligendi veritatis pariatur laborum, maiores sed tempore.</div>
+    <div class="flex" id="kotak_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora debitis odio placeat, nemo facilis sapiente rerum autem adipisci dolor error reiciendis reprehenderit explicabo id repellendus nisi maxime qui vitae impedit?</div>
+    <div class="flex" id="kotak_3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum dicta beatae necessitatibus doloremque quis quaerat ipsam totam consectetur itaque non! Officiis, dolor a illo ad magni natus nihil vel aliquam.</div>
+    <div class="flex" id="kotak_4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit modi adipisci veniam dolore voluptatibus repellendus odit rem praesentium at tenetur iste accusamus, cupiditate placeat? Natus fuga explicabo necessitatibus maiores quae.</div>
+   
+
+    <div class="flex" id="kotak_5">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus sunt eos aperiam doloribus hic blanditiis repudiandae suscipit, ex non? Id ipsam iure praesentium explicabo exercitationem unde aspernatur error tenetur commodi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id magni ipsum eos sequi. Voluptatibus, fuga voluptatem. Quod a possimus tempora perspiciatis, blanditiis, veniam maxime at provident magni officia eos fugit?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit recusandae modi quae reiciendis quia id autem cupiditate debitis. Enim ea quis cum delectus eveniet aliquam, voluptate vitae eum accusamus beatae?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit recusandae modi quae reiciendis quia id autem cupiditate debitis. Enim ea quis cum delectus eveniet aliquam, voluptate vitae eum accusamus beatae?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit recusandae modi quae reiciendis quia id autem cupiditate debitis. Enim ea quis cum delectus eveniet aliquam, voluptate vitae eum accusamus beatae?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit recusandae modi quae reiciendis quia id autem cupiditate debitis. Enim ea quis cum delectus eveniet aliquam, voluptate vitae eum accusamus beatae?</p>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin</title>
+
+    <style>
+        /* 
+            konsep value css: 
+            1. property: value; 
+                value berlaku untuk semua arah ==> value = atas = kanan = bawah = kiri
+
+            2. property: value1 value2;
+                ==> value1 = atas dan bawah
+                    value2 = kanan dan kiri
+
+            3. property: value1 value2 value3 value4;
+                ==> value1 = atas
+                    value2 = kanan
+                    value3 = bawah
+                    value4 = kiri
+
+            4. property-arah: value;
+                misal: 
+                    margin-top: value1
+                    margin-right: value2
+                    padding-left: value3
+            
+        */
+
+        body {
+            margin: 0;
+        }
+
+        #kotak_1 {
+            background: red;
+            width: 200px;
+            height: 50px;
+            margin: 20px;
+            border: 50px green solid;
+
+        }
+
+        #kotak_2 {
+            background-color: green;
+            width: 100px;
+            height: 50px;
+            margin: 10px 100px;
+        }
+
+        #kotak_3 {
+            background-color: blue;
+            width: 200px;
+            height: 50px;
+            margin: 50px;
+        }
+
+        #kotak_4 {
+            background-color: yellowgreen;
+            width: 200px;
+            height: 50px;
+            margin: 20px;;
+        }
+
+        #kotak_5 {
+            background-color: purple;
+            width: 300px;
+            height: 50px;
+            margin: 70px;
+        }
+
+        
+    </style>
+
+</head>
+<body>
+    <h1>Margin</h1>
+
+    <div id="kotak_1">Kotak 1</div>
+    <div id="kotak_2">Kotak 2</div>
+    <div id="kotak_3">Kotak 3</div>
+    <div id="kotak_4">Kotak 4</div>
+    <div id="kotak_5">Kotak 5</div>
+    
+</body>
+</html>

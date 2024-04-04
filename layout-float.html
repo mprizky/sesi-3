@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Layout</title>
+
+    <style>
+        header img {
+            width: 100px;
+        }
+
+        main img {
+            width: 50%;
+        }
+
+        header {
+            background: orange;
+            /* width: 100%;
+            height: 10vh; */
+        }
+
+        #header-logo {
+            float: left;
+            /* background-color: green; */
+        }
+
+        #header-text {
+            float: left;
+            /* padding: 1em; */
+            text-align: center;
+            width: 85%;
+            /* background-color: red; */
+            /* text-al */
+        }
+
+        /* clear fix */
+        header::after, #content-wrapper::after { 
+            /* selector untuk dua elemen sekaligus, dibatasi tanda koma */
+            display: table;
+            clear: both;
+            content: "";
+        }
+
+        nav ul {
+            margin-left: -2.5em;
+        }
+
+        nav ul li {
+            list-style-type: none;
+            background-color: rgb(188, 202, 188);
+            padding: 1em;
+            
+        }
+
+        nav ul li:hover {
+            background-color: rgb(103, 235, 143);
+            
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 1em;
+        }
+
+        nav ul li a:hover {
+            color: black;
+        }
+
+        nav {
+            width: 30%;
+            background-color: silver;
+            color: white;
+            float: left;
+            height: 85vh;
+
+        }
+
+        main {
+            width: 70%;
+            background-color: greenyellow;
+            float: left;
+            height: 85vh;
+            
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            height: 5vh;
+        }
+
+        /* #content-wrapper::after {
+            display: table;
+            clear: both;
+            content: "";
+        } */
+
+        body {
+            background-color: aqua;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- header, main, dan footer tidak akan muncul pada preview atau hasil. Melainkan untuk penanda yang nantinya akan mempermudah saat di CSS -->
+    <header>
+        <div id="header-logo">
+            <!-- <img src="hacktiv8.png" alt="Logo Hacktiv8" /> -->
+            <img src="https://d3g5ywftkpzr0e.cloudfront.net/wp-content/uploads/2020/01/15094433/hacktiv8-1.png" alt="logo hacktiv8">
+        </div>
+        <div id="header-text">
+            <h1>PT Hacktivate Indonesia</h1>
+        </div>
+    </header>
+
+    <div id="content-wrapper">
+        <nav>
+            <ul>
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+                <li><a href="#">Menu 4</a></li>
+            </ul>
+        </nav>
+    
+        <main>
+            <h2>Judul 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptatem perferendis dicta vitae possimus dolor sint voluptates qui repellat ut? Recusandae eligendi non ad fugit nulla expedita suscipit at fugiat? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci explicabo dolorem, deleniti ad minima veniam voluptatibus aut magni quod iste nostrum! Minima ad possimus ipsam totam quis animi perferendis officiis.</p>
+    
+            <img src="https://images.tokopedia.net/img/KRMmCm/2023/9/18/9f609a7c-bcb1-488e-938c-6df8576dea06.jpg" alt="Logo Hacktiv8">
+            
+            <h2>Judul 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptatem perferendis dicta vitae possimus dolor sint voluptates qui repellat ut? Recusandae eligendi non ad fugit nulla expedita suscipit at fugiat? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci explicabo dolorem, deleniti ad minima veniam voluptatibus aut magni quod iste nostrum! Minima ad possimus ipsam totam quis animi perferendis officiis.</p>
+    
+            <h2>Judul 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptatem perferendis dicta vitae possimus dolor sint voluptates qui repellat ut? Recusandae eligendi non ad fugit nulla expedita suscipit at fugiat? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci explicabo dolorem, deleniti ad minima veniam voluptatibus aut magni quod iste nostrum! Minima ad possimus ipsam totam quis animi perferendis officiis.</p>
+    
+    
+        </main>
+
+    </div>
+
+
+    <footer>
+        &copy; 2024 Nama Anda. All Rights Reserved
+    </footer>
+</body>
+</html>

@@ -1,0 +1,63 @@
+/* 
+    rule css:
+    h1 default color #76ea76
+*/
+
+body {
+    background: silver;
+    color: blue;
+}
+
+h1 {
+    color: #76ea76;
+    background: black;
+}
+
+/* h1 {
+    override / menimpa rule css sebelumnya
+    color: yellow;
+} */
+
+/* class    ==> simbol titik ==> . */
+.kuning {
+    color: yellow;
+}
+
+.merah {
+    color: red;
+}
+
+.rata_tengah {
+    text-align: center;
+}
+
+.rata_kanan {
+    text-align: right;
+}
+
+.rata_kiri_kanan {
+    text-align: justify;
+}
+
+.background_kuning {
+    background: yellow;
+}
+
+.rata_tengah_vertical {
+    vertical-align: middle;
+}
+
+/* id ==> simbol pagar --> # */
+#lingkaran { /* lebar dan tingginya sama */
+    width: 200px;
+    height: 200px;
+
+    /* warna garis lingkaran */
+    border: solid 1px red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+}
+    
